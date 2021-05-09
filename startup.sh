@@ -17,9 +17,9 @@ while [[ $(ping -c 1 -w 1 $GATEWAY) == "" ]]; do
    sleep 2
 done
 
-echo "Attempting git update"
+echo "Attempting git pull"
 cd /home/pi/rvairsuspension
-git update
+git pull
 
 echo "Post-boot script loaded. Calling main.py"
 python src/main.py
