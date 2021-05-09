@@ -21,8 +21,6 @@ echo "Attempting git pull"
 cd /home/pi/rvairsuspension
 git pull
 
-touch bootscriptran.txt
-
 echo "Post-boot script loaded. Calling main.py"
 python src/main.py
 
