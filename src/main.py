@@ -14,9 +14,9 @@ hw.init()
 ##### Toggle switch
 
 # Activate
-sensorFeed(True)
+hw.sensorFeed_on()
 time.sleep(1)
-sensorFeed(False)
+hw.sensorFeed_off()
 
 # Cleanup
 hw.cleanup()
