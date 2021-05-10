@@ -4,30 +4,30 @@
 import RPi.GPIO as GPIO
 
 # Variables
-sensorFeed = 12
-valveOutlet = 21
-valveRL = 6
-valveRR = 13
-valveFF = 26
-valveFBlock = 19
+#sensorFeed = 12
+#valveOutlet = 21
+#valveRL = 6
+#valveRR = 13
+#valveFF = 26
+#valveFBlock = 19 
 
 def init():
    # GPIO
    GPIO.setmode(GPIO.BCM)
 
-   GPIO.setup(sensorFeed, GPIO.OUT)
-   GPIO.setup(valveOutlet, GPIO.OUT)
-   GPIO.setup(valveRL, GPIO.OUT)
-   GPIO.setup(valveRR, GPIO.OUT)
-   GPIO.setup(valveFF, GPIO.OUT)
-   GPIO.setup(valveFBlock, GPIO.OUT)
+   GPIO.setup(12, GPIO.OUT)
+   GPIO.setup(21, GPIO.OUT)
+   GPIO.setup(6, GPIO.OUT)
+   GPIO.setup(13, GPIO.OUT)
+   GPIO.setup(26, GPIO.OUT)
+   GPIO.setup(19, GPIO.OUT)
 
-   GPIO.output(sensorFeed, GPIO.HIGH)
-   GPIO.output(valveOutlet, GPIO.HIGH)
-   GPIO.output(valveRL, GPIO.HIGH)
-   GPIO.output(valveRR, GPIO.HIGH)
-   GPIO.output(valveFF, GPIO.HIGH)
-   GPIO.output(valveFBlock, GPIO.HIGH)
+   GPIO.output(12, GPIO.HIGH)
+   GPIO.output(21, GPIO.HIGH)
+   GPIO.output(6, GPIO.HIGH)
+   GPIO.output(13, GPIO.HIGH)
+   GPIO.output(26, GPIO.HIGH)
+   GPIO.output(19, GPIO.HIGH)
 
 def cleanup():
    # GPIO
@@ -36,7 +36,7 @@ def cleanup():
    
 def sensorFeed(value):
    if True == value:
-      GPIO.output(sensorFeed, GPIO.LOW)
+      GPIO.output(12, GPIO.LOW)
    else:
-      GPIO.output(sensorFeed, GPIO.HIGH)
+      GPIO.output(12, GPIO.HIGH)
       
