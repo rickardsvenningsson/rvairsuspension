@@ -34,7 +34,7 @@ def cleanup():
    GPIO.cleanup()
 
    
-def sensorFeed(value)
+def sensorFeed(value):
    if(True == value)
       GPIO.output(sensorFeed, GPIO.LOW)
    else
