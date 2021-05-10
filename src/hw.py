@@ -35,8 +35,8 @@ def cleanup():
 
    
 def sensorFeed(value):
-   if(True == value)
+   if True == value:
       GPIO.output(sensorFeed, GPIO.LOW)
-   else
+   else:
       GPIO.output(sensorFeed, GPIO.HIGH)
       
