@@ -11,12 +11,9 @@ import hw
 ##### Set up hardware
 hw.init()
 
-##### Toggle switch
+##### Main
+print("Pitch: "+hw.getPitch())
 
-# Activate
-hw.sensorFeed_on()
-time.sleep(1)
-hw.sensorFeed_off()
 
 # Cleanup
 hw.cleanup()

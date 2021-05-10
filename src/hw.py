@@ -2,6 +2,7 @@
 
 # Imports
 import RPi.GPIO as GPIO
+from sense_hat import SenseHat
 
 # Variables
 #sensorFeed = 12
@@ -28,10 +29,25 @@ def init():
    GPIO.output(13, GPIO.HIGH)
    GPIO.output(26, GPIO.HIGH)
    GPIO.output(19, GPIO.HIGH)
-
+   
+   
 def cleanup():
    # GPIO
    GPIO.cleanup()
+   
+###### SenseHat FUNCTIONS
+def getPitch():
+   sense = SenseHat()
+   orientation = sense.get_orientation_degrees()
+   return orientation['pitch']
+
+def getRoll():
+   sense = SenseHat()
+   orientation = sense.get_orientation_degrees()
+   return orientation['roll']
+   
+ 
+###### GPIO FUNCTIONS   
    
 def sensorFeed_on():
    GPIO.output(12, GPIO.LOW)
