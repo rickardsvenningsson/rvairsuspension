@@ -32,11 +32,39 @@ def init():
 def cleanup():
    # GPIO
    GPIO.cleanup()
-
    
 def sensorFeed_on():
-      GPIO.output(12, GPIO.LOW)
+   GPIO.output(12, GPIO.LOW)
 
 def sensorFeed_off():
-      GPIO.output(12, GPIO.HIGH)
-      
+   GPIO.output(12, GPIO.HIGH)
+
+def valveOutlet_on():
+   GPIO.output(21, GPIO.LOW)
+
+def valveOutlet_off():
+   GPIO.output(21, GPIO.HIGH)      
+
+def valveRL_on():
+   GPIO.output(6, GPIO.LOW)
+
+def valveRL_off():
+   GPIO.output(6, GPIO.HIGH)      
+
+def valveRR_on():
+   GPIO.output(13, GPIO.LOW)
+
+def valveRR_off():
+   GPIO.output(13, GPIO.HIGH)      
+
+def valveFF_on():
+   GPIO.output(26, GPIO.LOW)
+
+def valveFF_off():
+   GPIO.output(26, GPIO.HIGH)      
+
+def valveFBlock_on():
+   GPIO.output(19, GPIO.LOW)
+
+def valveFBlock_off():
+   GPIO.output(19, GPIO.HIGH)      
