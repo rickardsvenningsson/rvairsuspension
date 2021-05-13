@@ -3,7 +3,7 @@
 ## Pinout
 ### Orange kontakt 9 utgångar (Vänster till höger)
 1-2: GND<br />
-3: +24V Spänningsmatning från buss när motor är igång. Denna drar säkerhetsrelä som inaktiverar reläer.<br />
+3: +24V Spänningsmatning från buss när motor är igång. Denna drar säkerhetsrelä som inaktiverar reläer. Jordar GPIO 17 när aktiverad.<br />
 4-5: Används ej<br />
 6: Sensor FL<br />
 7: Sensor FR<br />
